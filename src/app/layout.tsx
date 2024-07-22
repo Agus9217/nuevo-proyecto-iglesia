@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import {Providers} from "@/app/_providers/Providers";
 import {Navbar} from "@/app/components";
+import {Container} from "@chakra-ui/react";
+import {ReactNode} from "react";
 
 
 export const metadata: Metadata = {
@@ -11,16 +13,16 @@ export const metadata: Metadata = {
 export default function RootLayout({
                                      children,
                                    }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode
 }>) {
   return (
-      <html lang="es">
-      <body>
-      <Providers>
-        <Navbar/>
+    <html lang="es">
+    <body>
+    <Providers>
+      <Navbar/>
         {children}
-      </Providers>
-      </body>
-      </html>
+    </Providers>
+    </body>
+    </html>
   );
 }
