@@ -1,19 +1,23 @@
-import {Box, Stack} from "@chakra-ui/react";
+import {Box, Heading, Stack} from "@chakra-ui/react";
 
 export const Hero = () => {
   return (
     <Stack
-    borderWidth={'thin'}
-    borderColor={'green'}
+      borderWidth={'thin'}
+      borderColor={'green'}
     >
       <Box
         borderColor={'blue'}
+        display={'flex'}
         borderWidth={'thin'}
         w={'100%'}
-        h={'810px'}
-        maxH={'810px'}
+        height={{base: '500px', md: '600px', lg: '645px'}}
+        justifyContent={'center'}
+        alignItems={'center'}
       >
-
+        <Heading>
+          Imagen Hero
+        </Heading>
       </Box>
     </Stack>
   )

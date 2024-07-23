@@ -5,10 +5,11 @@ export const DesktopNavbar = () => {
   return (
     <Stack
       as={'nav'}
-      w={'40%'}
+      w={'50%'}
       borderColor={'blue'}
       borderWidth={'thin'}
       align={'center'}
+      py={4}
     >
       <UnorderedList
         styleType={'none'}

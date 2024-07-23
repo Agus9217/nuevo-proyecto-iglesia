@@ -5,6 +5,8 @@ export const Navbar = () => {
   return (
     <Stack
       as={'header'}
+      position={'fixed'}
+      top={0}
       borderWidth={'thin'}
       borderColor={'red'}
       w={'100%'}
