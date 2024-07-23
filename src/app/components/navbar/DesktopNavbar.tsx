@@ -9,7 +9,8 @@ export const DesktopNavbar = () => {
       borderColor={'blue'}
       borderWidth={'thin'}
       align={'center'}
-      py={4}
+      py={8}
+      bg={'white'}
     >
       <UnorderedList
         styleType={'none'}
@@ -20,7 +21,11 @@ export const DesktopNavbar = () => {
         {
           navItem.map(item => (
             <ListItem key={item.label}>
-              <Link>{item.label}</Link>
+              <Link
+                fontWeight={'bold'}
+              >
+                {item.label}
+              </Link>
             </ListItem>
           ))
         }

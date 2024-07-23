@@ -1,14 +1,15 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import {Flex, Heading, Stack} from "@chakra-ui/react";
 
 export const AboutUs = () => {
   return (
-    <Flex
+    <Stack
       borderWidth={'thin'}
       borderColor={'green'}
       align={'center'}
       justifyContent={'center'}
       height={'500px'}
       direction={'row'}
+      spacing={0}
     >
       <Flex
         m={0}
@@ -38,6 +39,6 @@ export const AboutUs = () => {
           About Us video Youtube
         </Heading>
       </Flex>
-    </Flex>
+    </Stack>
   )
 }

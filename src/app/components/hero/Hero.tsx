@@ -11,7 +11,7 @@ export const Hero = () => {
         display={'flex'}
         borderWidth={'thin'}
         w={'100%'}
-        height={{base: '500px', md: '600px', lg: '645px'}}
+        height={{base: '500px', md: '600px', lg: '645px', '2xl': '810px'}}
         justifyContent={'center'}
         alignItems={'center'}
       >

@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import {Providers} from "@/app/_providers/Providers";
-import {Navbar} from "@/app/components";
-import {Container} from "@chakra-ui/react";
+import {Footer, Navbar} from "@/app/components";
 import {ReactNode} from "react";
 
 
@@ -21,6 +20,7 @@ export default function RootLayout({
     <Providers>
       <Navbar/>
         {children}
+      <Footer/>
     </Providers>
     </body>
     </html>
