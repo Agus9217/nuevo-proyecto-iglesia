@@ -1,4 +1,4 @@
-import {Eventos, Form, Hero, Ministerios, AboutUs, ContainerPage} from "@/app/components";
+import { Eventos, Form, Hero, Ministerios, AboutUs, ContainerPage } from "@/app/components";
 
 export default function HomePage() {
   return (
@@ -7,10 +7,10 @@ export default function HomePage() {
       <ContainerPage
         width={'1920px'}
       >
-      <AboutUs />
-      <Ministerios />
-      <Eventos />
-      <Form />
+        <AboutUs />
+        <Ministerios />
+        <Eventos />
+        <Form />
       </ContainerPage>
     </>
   );

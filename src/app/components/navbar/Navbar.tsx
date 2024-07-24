@@ -1,5 +1,5 @@
-import {Stack} from "@chakra-ui/react";
-import {DesktopNavbar} from "@/app/components/navbar/DesktopNavbar";
+import { Show, Stack } from "@chakra-ui/react";
+import { DesktopNavbar } from "@/app/components/navbar/DesktopNavbar";
 
 export const Navbar = () => {
   return (
@@ -11,9 +11,12 @@ export const Navbar = () => {
       borderColor={'red'}
       w={'100%'}
       alignItems={'center'}
-      py={2}
+      py={1}
+      zIndex={1000}
     >
-      <DesktopNavbar/>
+      <Show above={'md'}>
+        <DesktopNavbar />
+      </Show>
     </Stack>
   )
 }
