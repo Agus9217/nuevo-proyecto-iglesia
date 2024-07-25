@@ -1,5 +1,7 @@
-import { Box, Icon, Link, ListItem, Stack, UnorderedList } from "@chakra-ui/react";
+import {Box, Flex, Link, ListItem, Stack, UnorderedList} from "@chakra-ui/react";
 import { navItem } from "@/app/components/navbar/nav-items";
+import imgSvg from "@/app/assets/worship-church-icon.svg";
+import Image from "next/image";
 
 export const DesktopNavbar = () => {
   return (
@@ -12,15 +14,19 @@ export const DesktopNavbar = () => {
       alignItems={'center'}
       borderColor={'blue'}
       borderWidth={'thin'}
-      bg={'white'}
+      bg={'whiteAlpha.900'}
       direction={'row'}
+      rounded={'lg'}
     >
-      <Box
+      <Flex
         borderColor={'red'}
         borderWidth={'thin'}
         flexGrow={1}
+        alignItems={'center'}
+        justifyContent={'center'}
       >
-      </Box>
+        <Image src={imgSvg} alt={'My icon'} width={150} height={150}/>
+      </Flex>
       <UnorderedList
         styleType={'none'}
         display={'flex'}
