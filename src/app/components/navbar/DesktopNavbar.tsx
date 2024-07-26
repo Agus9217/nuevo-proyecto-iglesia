@@ -1,7 +1,9 @@
-import { Box, Link, Flex, ListItem, Stack, UnorderedList } from "@chakra-ui/react";
+import { Box, Flex, ListItem, Stack, UnorderedList } from "@chakra-ui/react";
 import { navItem } from "@/app/components/navbar/nav-items";
 import imgSvg from "@/app/assets/worship-church-icon.svg";
 import Image from "next/image";
+import {LinkMotion} from "@/app/components";
+import { IoLogInOutline } from "react-icons/io5";
 
 export const DesktopNavbar = () => {
 
@@ -24,8 +26,9 @@ export const DesktopNavbar = () => {
         borderWidth={'thin'}
         flexGrow={1}
         alignItems={'center'}
-        justifyContent={'center'}
         maxW={'500px'}
+        w={'100%'}
+        px={2}
       >
         <Image
           src={imgSvg}
@@ -45,22 +48,29 @@ export const DesktopNavbar = () => {
         {
           navItem.map(item => (
             <ListItem key={item.label}>
-              <Link
+              <LinkMotion
+                href={'/'}
+                text={item.label}
                 fontWeight={'bold'}
-              >
-                {item.label}
-              </Link>
+              />
             </ListItem>
           ))
         }
       </UnorderedList>
-      <Box
+      <Flex
         borderWidth={'thin'}
         borderColor={'red'}
         flexGrow={1}
         maxW={'500px'}
+        w={'100%'}
+        justifyContent={'end'}
+        alignItems={'center'}
+        px={2}
       >
-      </Box>
+        <IoLogInOutline
+          size={30}
+        />
+      </Flex>
     </Stack>
   )
 }

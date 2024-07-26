@@ -1,3 +1,4 @@
+export {LinkMotion} from "@/app/components/linkMotion/LinkMotion";
 export {ContainerPage} from "./container/Container";
 export {Form} from "./form/Form";
 export {Footer} from "./footer/Footer";
