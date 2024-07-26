@@ -2,7 +2,7 @@ import { Show, Stack } from "@chakra-ui/react";
 import { DesktopNavbar } from "@/app/components/navbar/DesktopNavbar";
 
 export const Navbar = () => {
-  console.log('Hola')
+
   return (
     <Stack
       as={'header'}
