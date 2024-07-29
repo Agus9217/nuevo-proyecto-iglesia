@@ -10,16 +10,15 @@ export const DesktopNavbar = () => {
   return (
     <Stack
       as={'nav'}
-      maxW={'1300px'}
-      h={'94px'}
+      maxW={'1400px'}
+      h={'100%'}
       w={'100%'}
       justifyContent={'center'}
       alignItems={'center'}
       borderColor={'blue'}
       borderWidth={'thin'}
-      bg={'whiteAlpha.900'}
+      bg={'white'}
       direction={'row'}
-      rounded={'lg'}
     >
       <Flex
         borderColor={'red'}
@@ -28,7 +27,6 @@ export const DesktopNavbar = () => {
         alignItems={'center'}
         maxW={'500px'}
         w={'100%'}
-        px={2}
       >
         <Image
           src={imgSvg}

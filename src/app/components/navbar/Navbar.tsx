@@ -11,8 +11,9 @@ export const Navbar = () => {
       borderWidth={'thin'}
       borderColor={'red'}
       w={'100%'}
+      h={'85px'}
       alignItems={'center'}
-      py={1}
+      py={{base: 0, xl: 3}}
       zIndex={1000}
     >
       <Show above={'md'}>
