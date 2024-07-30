@@ -13,7 +13,7 @@ export const Navbar = () => {
       w={'100%'}
       h={'85px'}
       alignItems={'center'}
-      py={{base: 0, xl: 3}}
+      pt={{ base: 0, xl: 3 }}
       zIndex={1000}
     >
       <Show above={'md'}>
