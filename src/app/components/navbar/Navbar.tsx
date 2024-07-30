@@ -1,15 +1,16 @@
-import { Show, Stack } from "@chakra-ui/react";
+'use client'
+
+import {Drawer, DrawerContent, DrawerOverlay, Show, Stack, useDisclosure} from "@chakra-ui/react";
 import { DesktopNavbar } from "@/app/components/navbar/DesktopNavbar";
 
 export const Navbar = () => {
+  const {isOpen, onOpen, onClose} = useDisclosure()
 
   return (
     <Stack
       as={'header'}
       position={'fixed'}
       top={0}
-      borderWidth={'thin'}
-      borderColor={'red'}
       w={'100%'}
       h={'85px'}
       alignItems={'center'}
@@ -17,8 +18,18 @@ export const Navbar = () => {
       zIndex={1000}
     >
       <Show above={'md'}>
-        <DesktopNavbar />
+        <DesktopNavbar onOpen={onOpen} />
       </Show>
+      <Drawer
+        isOpen={isOpen}
+        placement='right'
+        onClose={onClose}
+      >
+        <DrawerOverlay/>
+        <DrawerContent>
+
+        </DrawerContent>
+      </Drawer>
     </Stack>
   )
 }
