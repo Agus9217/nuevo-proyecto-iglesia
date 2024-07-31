@@ -1,4 +1,4 @@
-import {Flex, Heading, Stack} from "@chakra-ui/react";
+import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
 
 export const AboutUs = () => {
   return (
@@ -11,15 +11,23 @@ export const AboutUs = () => {
     >
       <Flex
         m={0}
-        p={0}
+        px={8}
         h={'100%'}
         w={'50%'}
-        align={'center'}
         justifyContent={'center'}
+        direction={'column'}
       >
+        <Text
+          as={'i'}
+        >
+          Donde encontrarnos
+        </Text>
         <Heading>
-          About Us
+          Sobre Nosotros
         </Heading>
+        <Text>
+          Consectetur erat eget, lacus turpis amet, libero eleifend ultricies duis. Nam nullam at, ac iaculis aliquet, a in condimentum amet. Diam malesuada sed, et non dui, vitae nisl nullam varius. Tortor aliquam nibh, a enim praesent, est tristique consequat enim. Imperdiet dignissim suspendisse, pulvinar pharetra dui, dui facilisis ullamcorper eleifend.
+        </Text>
       </Flex>
       <Flex
         m={0}
