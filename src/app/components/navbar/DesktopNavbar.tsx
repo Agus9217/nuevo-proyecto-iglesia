@@ -42,7 +42,7 @@ export const DesktopNavbar = () => {
           <Highlight
             query={['Barrio', 'Nuevo']}
             styles={{
-              color: 'blue.500',
+              color: 'blue.600',
             }}
           >
             Iglesia Cristiana en Barrio Nuevo

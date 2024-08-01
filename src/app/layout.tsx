@@ -1,7 +1,7 @@
-import type {Metadata} from "next";
-import {Providers} from "@/app/_providers/Providers";
-import {Footer, Navbar} from "@/app/components";
-import {ReactNode} from "react";
+import type { Metadata } from "next";
+import { Providers } from "@/app/_providers/Providers";
+import { Footer, Navbar } from "@/app/components";
+import { ReactNode } from "react";
 
 
 export const metadata: Metadata = {
@@ -10,19 +10,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
+  children,
+}: Readonly<{
   children: ReactNode
 }>) {
   return (
     <html lang="es">
-    <body>
-    <Providers>
-      <Navbar/>
-        {children}
-      <Footer/>
-    </Providers>
-    </body>
+      <body>
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
+      </body>
     </html>
   );
 }
